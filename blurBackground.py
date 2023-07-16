@@ -1,3 +1,4 @@
+
 import cv2
 
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -26,7 +27,7 @@ while True:
         upper = frame[0:y, :]  
         blur_roi = blur[0:y, :] 
         frame[0:y, :] = blur_roi
-        q
+        
         lower = frame[y+h:, :]  
         blur_roi = blur[y+h:, :] 
         frame[y+h:, :] = blur_roi
@@ -38,3 +39,6 @@ while True:
 
 video_capture.release()
 cv2.destroyAllWindows()
+video_capture.release()
+ 
+ 
